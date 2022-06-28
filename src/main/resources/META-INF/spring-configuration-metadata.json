@@ -1,0 +1,190 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties",
+      "name": "security",
+      "type": "mgmsports.common.property.SecurityProperties"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties",
+      "name": "security.cors",
+      "sourceMethod": "getCors()",
+      "type": "mgmsports.common.property.SecurityProperties$Cors"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties",
+      "name": "security.jwt",
+      "sourceMethod": "getJwt()",
+      "type": "mgmsports.common.property.SecurityProperties$Jwt"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Cors",
+      "defaultValue": [
+        "Accept",
+        "Accept-Encoding",
+        "Accept-Language",
+        "Cache-Control",
+        "Connection",
+        "Content-Length",
+        "Content-Type",
+        "Cookie",
+        "Host",
+        "Origin",
+        "Pragma",
+        "Referer",
+        "User-Agent",
+        "x-requested-with"
+      ],
+      "name": "security.cors.allowed-headers",
+      "description": "Request headers to be allowed, e.g. content-type,accept,origin,x-requested-with,...",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Cors",
+      "defaultValue": [
+        "Accept",
+        "Accept-Encoding",
+        "Accept-Language",
+        "Cache-Control",
+        "Connection",
+        "Content-Length",
+        "Content-Type",
+        "Cookie",
+        "Host",
+        "Origin",
+        "Pragma",
+        "Referer",
+        "User-Agent",
+        "x-requested-with"
+      ],
+      "name": "security.cors.allowed-headers",
+      "description": "Request headers to be allowed, e.g. content-type,accept,origin,x-requested-with,...",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Cors",
+      "defaultValue": [
+        "GET",
+        "HEAD",
+        "POST",
+        "PUT",
+        "DELETE",
+        "TRACE",
+        "OPTIONS",
+        "PATCH"
+      ],
+      "name": "security.cors.allowed-methods",
+      "description": "Methods to be allowed, e.g. GET,POST,...",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Cors",
+      "defaultValue": [
+        "GET",
+        "HEAD",
+        "POST",
+        "PUT",
+        "DELETE",
+        "TRACE",
+        "OPTIONS",
+        "PATCH"
+      ],
+      "name": "security.cors.allowed-methods",
+      "description": "Methods to be allowed, e.g. GET,POST,...",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Cors",
+      "name": "security.cors.allowed-origins",
+      "description": "Comma separated whitelisted URLs for CORS.\n Should contain the applicationURL at the minimum.\n Not providing this property would disable CORS configuration.",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Cors",
+      "defaultValue": [
+        "Cache-Control",
+        "Connection",
+        "Content-Type",
+        "Date",
+        "Expires",
+        "Pragma",
+        "Server",
+        "Set-Cookie",
+        "Transfer-Encoding",
+        "X-Content-Type-Options",
+        "X-XSS-Protection",
+        "X-Frame-Options",
+        "X-Application-Context"
+      ],
+      "name": "security.cors.exposed-headers",
+      "description": "Response headers that you want to expose to the client JavaScript programmer, e.g. Lemon-Authorization.\n\n <br>\n See <a href=\"http:\/\/stackoverflow.com\/questions\/25673089\/why-is-access-control-expose-headers-needed#answer-25673446\">\n here<\/a> to know why this could be needed.",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Cors",
+      "defaultValue": [
+        "Cache-Control",
+        "Connection",
+        "Content-Type",
+        "Date",
+        "Expires",
+        "Pragma",
+        "Server",
+        "Set-Cookie",
+        "Transfer-Encoding",
+        "X-Content-Type-Options",
+        "X-XSS-Protection",
+        "X-Frame-Options",
+        "X-Application-Context"
+      ],
+      "name": "security.cors.exposed-headers",
+      "description": "Response headers that you want to expose to the client JavaScript programmer, e.g. Lemon-Authorization.\n\n <br>\n See <a href=\"http:\/\/stackoverflow.com\/questions\/25673089\/why-is-access-control-expose-headers-needed#answer-25673446\">\n here<\/a> to know why this could be needed.",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Jwt",
+      "defaultValue": 86400000,
+      "name": "security.jwt.expiration-time",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Jwt",
+      "defaultValue": "926D96C90030DD58429D2751AC1BDBBC",
+      "name": "security.jwt.secret",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Jwt",
+      "defaultValue": 120000,
+      "name": "security.jwt.short-lived-time",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Jwt",
+      "defaultValue": "Bearer",
+      "name": "security.jwt.token-prefix",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Jwt",
+      "defaultValue": "Authorization",
+      "name": "security.jwt.token-request-header-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties$Jwt",
+      "defaultValue": "MgmSports-Authorization",
+      "name": "security.jwt.token-response-header-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "mgmsports.common.property.SecurityProperties",
+      "name": "security.oauth2-authentication-success-url",
+      "description": "The default URL to redirect to after\n a user logs in using OAuth2\/OpenIDConnect",
+      "type": "java.lang.String"
+    }
+  ]
+}
